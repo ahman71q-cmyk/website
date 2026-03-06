@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام إدارة مشروع 5G</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+
+<body>
+    <!-- عناصر التصميم -->
+    <div class="signal-bar">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    
+    <div class="wave"></div>
+    <div class="tower"></div>
+    
+    <div id="app"></div>
+    
+    <!-- صندوق الرسائل -->
+    <div id="messagesPanel" class="messages-panel" style="display: none;">
+        <div class="messages-header" onclick="toggleMessages()">
+            <h3>📨 الرسائل <span id="unreadCount" class="unread-badge">0</span></h3>
+            <span>▼</span>
+        </div>
+        <div id="messagesContent" class="messages-content" style="display: none;">
+            <!-- الرسائل تظهر هنا -->
+        </div>
+        <div id="messageInput" class="message-input" style="display: none;">
+            <input type="text" id="newMessage" placeholder="اكتب رسالتك...">
+            <button onclick="sendMessage()">إرسال</button>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <span>📡 5G Network Project Management System 📡</span>
+    </div>
+</div></div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
